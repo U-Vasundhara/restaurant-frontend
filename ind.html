@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khao.com</title>
+
+    <link rel ="stylesheet" href= "css/st.css">
+
+</head>
+<style>
+    *{
+    margin:0px;
+    padding:0px;
+}
+:root{
+    --navbar-height:49px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position:relative;
+    top:0px;
+}
+
+#container{
+
+    margin: 9px;
+    padding: 8px;
+
+}
+#container img{
+    margin:13px 1px;
+    padding:4px 6px;
+    height:110px;
+    width:110px;
+
+}
+#navbar ul{
+    display:flex;
+
+}
+#navbar::before{
+    content: " ";
+    position: absolute;
+    color:black;
+    background-color:grey;
+    opacity: 0.4;
+    z-index:-1;
+    height:100%;
+    width:100%;
+   
+}
+
+ #navbar ul li{
+    
+    list-style: none;
+    /*background-color: rgb(118, 118, 236);*/
+    
+    font-size: 1.5rem;
+
+}
+#navbar ul li a{
+    color:black;
+    display:block;
+    padding:4px 10px;
+    font-style: bold;
+    text-decoration:none;
+    border-radius: 12px;
+
+}
+#navbar ul li a:hover{
+    background-color: black;
+    color: white;
+
+}
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height:375px;
+    align-items: center;
+    justify-content: center;
+
+}
+#home::before{
+    content:"";
+    position:absolute;
+    height:110%;
+    width:100%;
+    opacity:0.85;
+    z-index:-1;
+    background: url('bg.jpg') no-repeat center center/cover;
+
+}
+#home h1{
+    color:black;
+    text-align: center;
+    /*padding:5px 139px;*/
+    font-size: 4.2rem;
+    margin:3px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(13, 12, 75, 0.981);
+}
+#home p{
+    color:black;
+    text-align: center;
+    font-size:1.6rem;
+    font-style: bold;
+}
+
+.services-container 
+    .h1-primary{
+        
+    margin:135px;
+    padding:70px;
+    height:15px;
+    justify-content: center;
+    
+
+}
+#one
+{ margin:135px;
+    padding:100px 10px 30px 15px;
+    height:15px;
+    justify-content: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:4rem;
+    font-style: bold;
+
+}
+
+.h1-primary{
+    margin:50px;
+    padding:25px;
+    font-size: 3.4rem;
+   
+}
+.h1-secondary{
+    
+    font-size:1.3rem;
+    padding:12px;
+}
+#services{
+    display:flex;
+    margin:34px;
+    height:100%
+}
+#services .box{
+    border:2px solid black;
+    height:220px;
+    display:block;
+    padding:25px;
+    margin:-53px 5px;
+    border-radius: 20px;
+    background-color: rgb(252, 227, 231);
+    color:rgb(100, 2, 2)
+   
+
+}
+
+#services .box img{
+    display:block;
+    margin:auto;
+    height:100px;
+    width:120px;
+    
+}
+#services .box img:hover{
+    cursor:pointer;
+    
+    
+}
+.services-container #services .box .p{
+
+    color:yellow;
+    font-size: 2.4rem;
+
+}
+.btn{
+    background-color: black;
+    color:white;
+    padding:15px;
+    margin:15px;
+    font-size:1.3rem;
+    border-radius: 9px;
+    cursor:pointer;
+}
+.btn:hover{
+    background-color: white;
+    color:black;
+    padding:15px;
+    margin:15px;
+    font-size:1.3rem;
+    border-radius: 9px;
+    cursor:pointer;
+}
+.center{
+    text-align:center;
+}
+.dash{
+    height:70%;
+    width:100%;
+}
+.dash #clients{
+    
+    display:flex;
+    position:relative;
+    justify-content: center;
+    align-items:center;
+    height:60px;
+    margin:70px;
+    padding:15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 5.5rem;
+
+}
+
+.mocktails{
+    display:flex;
+}
+.dash::before{
+    
+    
+    content:"";
+    position:absolute;
+    background: url('bg2.jpg')no-repeat center center/cover;
+    opacity: 0.3;
+    z-index:-1;
+    width:100%;
+    height:60%;
+
+}
+
+.client-items img {
+    width:190px;
+    height:190px;
+    display:flex;
+    margin:15px;
+    padding:15px;
+    
+   justify-content: center;
+    
+}
+
+#contact{
+    position:relative;
+}
+#contact::before{
+    
+    content:" ";
+    position:absolute;
+    opacity: 0.7;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    background:url('contact.jpg') no-repeat center center/cover;
+    
+
+}
+#contact textarea{
+    width: 45%;
+    padding: 10px;
+    
+}
+.formgroup{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 10px;
+    font-size: 1.2rem;
+
+}
+
+ 
+ 
+
+footer{
+    background-color: black;
+    color: white;
+    font-size:1.3rem;
+    padding:9px 20px;
+
+}
+
+
+
+</style>
+
+
+<body>
+    <nav id="navbar">
+        
+        <div id ="container">
+            <img src="logo.jpg" alt="Khao.com">
+        </div>
+
+        <ul>
+
+        <li class="item"><a href = "#">Home</a></li>
+        <li class="item"><a href = "#">About Us</a></li>
+        <li class="item"><a href = "#">Services</a></li>
+        <li class="item"><a href = "#">Contact us</a></li>
+        
+
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h1-primary">Welcome to Khana Khajana</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione quos veniam deserunt quam dolorum </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit Temporibus inventore
+            </p>
+            <button class="btn">
+                Order Now
+            </button>
+        
+    </section>
+    <section class="services-container">
+        <h1 id="one" class="h1-primary center">
+            Our Services
+        </h1>
+        <div id="services">
+            <div class="box">
+                <img src ='potbiryani.jpg' alt="DOSA">
+                <h2 class="h1-secondary center">Biryani Orders </h2>
+                    <p>Serving deliciousness for over a decade, Biryanis and More has struck a chord with gourmets across the world.
+                        Today, Biryanis and More, as a proud leader of the Indian cuisine's juggernaut across the globe, is synonymous with quality, taste, and every other gastronomical pleasure.</p>
+            </div>
+            <div class="box">
+                <img src ='curry.jpg' alt="DOSA">
+                <h2 class="h1-secondary center">Meals Orders </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, accusantium.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. In hic delectus quas rem eaque reiciendis voluptates assumenda ut, voluptatibus facilis?
+                    </p>
+            </div>
+            <div class="box">
+                <img src ='chococake.jpg' alt="DOSA">
+                <h2 class="h1-secondary center">Desserts Orders </h2>
+                    <p>From devil's food to molten lava, chocolate cake is always a hit with customers since there are so many chocoholics. This dessert can be a bit rich, so why not have servers ask customers if they'd like a cup of coffee or a glass of milk, too.
+                    </p>
+            </div>
+            
+        </div>
+    </section>
+    <div class = "dash">
+    <section id="clients">
+        <h1 class="h1-primary center">
+            Our Clients</h1>
+        </section>
+    <div class = "mocktails">
+            
+                <div class="client-items">
+                    <a href = "https://www.google.com ">
+                        <img src="applelogo" alt = "Our clients">
+                    </a>
+                   
+                </div>
+            
+            <div class="client-items">
+                <a href = "https://www.google.com ">
+            <img src="fb.png" alt = "Our clients">
+            </a>
+            </div>
+            <div class="client-items">
+                <a href = "https://www.google.com ">
+                <img src="instagram.webp" alt = "Our clients">
+                </a>
+                </div>
+                <div class="client-items">
+                    <a href = "https://www.google.com ">
+                    <img src="dominos.webp" alt = "Our clients">
+                    </a>
+                    </div>
+                    <div class="client-items">
+                        <a href = "https://www.google.com ">
+                        <img src="Google__G__Logo.svg.webp" alt = "Our clients">
+                        </a>
+                        </div>
+                        <div class="client-items">
+                            <a href = "https://www.google.com ">
+                        <img src="ph.png" alt = "Our clients">
+                        </a>
+                        </div>
+        </div>
+   
+    </div> 
+    <section id="contact">
+        <h1 class="h1-primary center">
+            Contact Us
+        </h1>
+        <form action="">
+            <div class="formgroup">
+                <label for name="">Name: </label>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+            </div>
+
+            <div class="formgroup">
+                <label for name="">Email: </label>
+                <input type="text" name="name" id="name" placeholder="Enter your email">
+            </div>
+            <div class="formgroup">
+                <label for name="">Phone Number: </label>
+                <input type="text" name="name" id="name" placeholder="Enter your phone">
+            </div>
+            <div class="formgroup">
+                <label for name="">Message: </label>
+                <textarea name = "Message" id="message" cols="5" rows="5">
+
+                </textarea>
+
+               
+            </div>
+            
+        </form>
+
+    </section>
+</body>
+
+    <footer>
+        <div class="center">
+
+            CopyRights &copy;  www.khanakajana.com All Rights reserved;
+
+        </div>
+    </footer>
+    
+
+
+</html>
